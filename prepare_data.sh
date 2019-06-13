@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Convert Sentinel-2 images into tif
+# Before using unzip folders with data:
 # unzip \*.zip
 
 ls | egrep 'S2[AB]_MSIL1C_\d*' > folders.txt
