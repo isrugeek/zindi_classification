@@ -12,7 +12,7 @@ do
     arrTST=(${path//_/ })
     pref=${arrTST[5]}_${arrTST[2]}_B0
     prefix=$path/$pref
-    gdalbuildvrt -separate TCI.vrt ${prefix}2.jp2 ${prefix}3.jp2 ${prefix}4.jp2
+    gdalbuildvrt -separate TCI.vrt ${prefix}1.jp2  ${prefix}2.jp2 ${prefix}3.jp2 ${prefix}4.jp2 ${prefix}5.jp2 ${prefix}6.jp2 ${prefix}7.jp2 ${prefix}8.jp2 ${prefix}9.jp2 ${prefix}10.jp2 ${prefix}11.jp2 ${prefix}12.jp2 ${prefix}8A.jp2
     gdal_translate -ot Byte -co TILED=YES -scale 0 4096 0 255 TCI.vrt $pref.tif
 
 done
